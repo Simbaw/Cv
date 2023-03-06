@@ -1,0 +1,162 @@
+/* Modifie la police d'écriture du body du cv */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Permet de mettre en grid avec deux colomnes le cv et ajoute une ombre autour  */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "left-column right-column";
+    width: 1200px;
+    box-shadow: 10px 5px 5px 5px rgba(0,0,0,0.12);
+    margin: auto;
+  }
+/* Redimenssione la photo */
+.profile-photo {
+    margin-left: 80px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 30px;
+}
+
+.comppro{
+margin-left: 20px;
+}
+
+.name {
+  margin-left: 10px;
+}
+/* Ajoute une ligne pour séparer les sections */
+hr {
+  border-top: 1px solid hsl(245, 93%, 73%); background-color: #2748ff;
+  margin-bottom: 20px;
+}
+
+.right-column h2 {
+  margin-bottom: -5px;
+  margin-top: 20px;
+}
+
+/* Ajoute la marge de 40px */
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+/* Celle de 20px */
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+/* Met ma colomne gauche de couleur bleu */
+.left-column {
+    grid-area: left-column;
+    padding: 20px;
+    background-color: #4472C4;
+    color: white;
+  }
+
+.left-column a {
+  color: white;
+}
+
+
+.contact {
+    position: relative;
+}
+
+.contact-infos {
+    left: 30px;
+    position: relative;
+}
+
+
+.right-column {
+  grid-area: right-column;
+  padding: 20px;
+}
+
+.right-column h2 {
+  color: #4472C4;
+}
+
+.job, .formation {
+  position: relative;
+}
+
+/* competence personelle */
+.profile {
+  margin-left: 30px;
+  padding: 4px;
+}
+
+.loisirs {
+  margin-left: 30px;
+  padding: 4px;
+}
+
+/* Place les années sur la droite */
+.job-year {
+  position: absolute;
+  color: #4472C4;
+  font-weight: 600;
+  right: 0;
+}
+
+.job-infos {
+  left: 10px;
+  margin-bottom: 2px;
+  position: relative;
+  font-weight: 600;
+}
+
+.job-comp {
+  left: 10px;
+  top: 100%;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+
+.job-comp2 {
+  left: 30px;
+  top: 100%;
+  position: relative;
+}
+
+.logoright {
+  margin-left: 15px;
+}
+
+.formation-year {
+  position: absolute;
+  color: #4472C4;
+  font-weight: 600;
+  right: 0;
+}
+
+.formation-infos {
+  left: 10px;
+  position: relative;
+  font-weight: 600;
+}
+
+.formation-comp {
+  left: 10px;
+  top: 100%;
+  position: absolute;
+}
+
+
+.languages {
+  margin-left: 10px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+
+
+/* Me permet de superposé des éléments */
+i {
+  z-index: 99999;
+  position:absolute;
+}
